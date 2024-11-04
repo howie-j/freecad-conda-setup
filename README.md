@@ -1,11 +1,23 @@
-# FREECAD-CONDA-SETUP
+# FreeCAD Conda Setup
 
 Conda development setup for FreeCAD on Linux.
 
-This setup script is based on the FreeCAD Developers Handbook: [https://freecad.github.io/DevelopersHandbook/gettingstarted/](https://freecad.github.io/DevelopersHandbook/gettingstarted/)
+A simple setup script for installing conda (miniforge), cloning FreeCAD source, compiling, and finally running FreeCAD. This script is based on the [FreeCAD Developers Handbook](https://freecad.github.io/DevelopersHandbook/gettingstarted/) and the [official miniforge instructions.](https://github.com/conda-forge/miniforge/)
 
-First we install [miniforge](https://github.com/conda-forge/miniforge/), then we activate the conda environment, install the required packages and compile freecad.
+## Instructions
 
-## HOW TO
+- [Optional] Change the paths and URL in [setup.sh](setup.sh) to your preference
+- Run `bash setup.sh`
 
-Change the paths in [setup.sh](setup.sh) if you prefer, then run: `bash setup.sh`
+Tested on:
+
+- `Ubuntu 22.04`
+- `Ubuntu 24.04`
+- `Fedora 40`
+- `Fedora 41`
+
+Warning: git needed on ubuntu, install with `sudo apt install -y git`
+
+## Uninstall Conda
+
+To uninstall conda (miniforge), run `uninstall.sh`
